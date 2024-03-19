@@ -12,6 +12,7 @@ route.post("/signUp",validator.postValidation,controller.crtUsr)
 
 route.post("/login",validator.postValidation,controller.login)
 
+
 route.get("/listusr",tokenUtils.verifyTokenWithPassport,controller.listusr)
 
 route.get("/viewusr/:id",tokenUtils.verifyTokenWithPassport,controller.viewusr)
